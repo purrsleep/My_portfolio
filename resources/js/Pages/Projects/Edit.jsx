@@ -14,6 +14,7 @@ export default function Edit({ project }) {
     image: null,
     date_completed: project.date_completed,
     display_order: project.display_order,
+    display_order: project.display_order, role: project.role
   });
 
   const submit = (e) => {

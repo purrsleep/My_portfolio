@@ -60,6 +60,9 @@ export default function ProjectForm({ form, onSubmit, submitLabel, currentImageU
           <input type="number" min="0" max="999" {...bind('display_order')} />
         </FormField>
       </div>
+      <FormField id="role" label="My role" error={errors.role} hint="2 to 50 characters.">
+        <input type="text" {...bind('role')} />
+      </FormField>
 
       <FormField id="image" label="Screenshot (optional)" error={errors.image} hint="JPG, PNG or WEBP, up to 2 MB.">
         {currentImageUrl && !data.image && (

@@ -27,6 +27,7 @@ class ProjectRequest extends FormRequest
             'image'          => ['nullable', 'image', 'mimes:jpg,jpeg,png,webp', 'max:2048'],
             'date_completed' => ['required', 'date', 'before_or_equal:today'],
             'display_order'  => ['required', 'integer', 'between:0,999'],
+            'role'           => ['required', 'string', 'min:2', 'max:50'],
         ];
     }
 
@@ -41,6 +42,7 @@ class ProjectRequest extends FormRequest
             'image.mimes'                 => 'The image must be a JPG, PNG or WEBP file.',
             'date_completed.before_or_equal' => 'The completion date cannot be in the future.',
             'display_order.between'       => 'Display order must be a whole number from 0 to 999.',
+            'role.max'                      => 'Role must be not exceed 50 characters.',
         ];
     }
 }

@@ -7,6 +7,7 @@ export default function Create() {
     title: '', category: 'web', description: '', tech_stack: '',
     project_url: '', repository_url: '', image: null,
     date_completed: '', display_order: 0,
+    display_order: 0, role: 'Developer'
   });
 
   const submit = (e) => {

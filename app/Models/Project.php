@@ -9,7 +9,7 @@ class Project extends Model
     protected $fillable = [
         'title', 'category', 'description', 'tech_stack',
         'project_url', 'repository_url', 'image_path', 'image_data', 'image_mime',
-        'date_completed', 'display_order',
+        'date_completed', 'display_order','role'
     ];
 
     protected $hidden = ['image_data'];
@@ -26,7 +26,7 @@ class Project extends Model
         return $query->select(
             'id', 'title', 'category', 'description', 'tech_stack',
             'project_url', 'repository_url', 'image_path', 'image_mime',
-            'date_completed', 'display_order', 'created_at', 'updated_at'
+            'date_completed', 'display_order', 'role', 'created_at', 'updated_at'
         );
     }
 
