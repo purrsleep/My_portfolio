@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Paste anything from your old css/styles.css below this line. */
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
